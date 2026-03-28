@@ -1,0 +1,28 @@
+.icon {
+  display: block;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-image: url(/src/images/icon-menu.png);
+}
+
+.icon-close {
+  background-image: url(/src/images/icon-close.png);
+}
+
+.icon-phone {
+  display: inline-flex;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-arrow {
+  display: block;
+  width: 24px;
+  height: 24px;
+}

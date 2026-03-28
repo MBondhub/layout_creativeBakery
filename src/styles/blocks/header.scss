@@ -1,0 +1,120 @@
+.header {
+  margin-bottom: 64px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @include md {
+      height: 328px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.title-1 {
+  display: flex;
+  color: #1c1a26;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 32px;
+
+  @include md {
+    margin-top: 80px;
+    margin-left: 44px;
+  }
+}
+
+.header__title {
+  display: flex;
+  position: relative;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 85%;
+  letter-spacing: -5%;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #f9512e;
+  width: 100%;
+  margin-top: 32px;
+  z-index: 2;
+}
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__cookie {
+    display: block;
+    width: 100%;
+    max-width: 288px;
+    height: 100%;
+
+    @include md {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      max-width: 326px;
+    }
+  }
+}
+
+.header__botom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__button {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 288px;
+  height: 56px;
+  border: 2px #f9512e solid;
+  border-radius: 32px;
+  background-color: #ffeefc;
+  color: #f9512e;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  @include md {
+    height: 56px;
+    width: 100%;
+    max-width: 326px;
+    margin-top: 80px;
+    margin-bottom: 228px;
+  }
+
+  &-cookie {
+    width: 20px;
+    height: 20px;
+  }
+}

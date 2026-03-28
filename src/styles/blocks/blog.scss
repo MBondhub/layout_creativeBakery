@@ -1,0 +1,60 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #1c1a26;
+
+   &__wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  --columns: 2;
+
+  gap: 16px;
+
+  @include md {
+    --columns: 8;
+
+    gap: 24px;
+  }
+}
+
+  &__logo-link {
+    display: flex;
+    margin-bottom: 40px;
+    height: 40px;
+    margin-top: 56px;
+
+    @include md {
+      margin-top: 88px;
+      margin-bottom: 96px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__list {
+    color: #fff;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -1%;
+  }
+}
+
+.logo__wrapper {
+  grid-column: 1 / -1;
+
+  @include md {
+    grid-column: 1 / 5;
+  }
+}
+
+
