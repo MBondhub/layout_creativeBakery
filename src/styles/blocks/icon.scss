@@ -8,6 +8,11 @@
   margin-bottom: 20px;
 
   background-image: url(/src/images/icon-menu.png);
+
+  @include lg {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .icon-close {

@@ -1,6 +1,5 @@
 .contact-us {
   color: #fff;
-  margin-top: 64px;
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 48px;
@@ -8,31 +7,38 @@
   letter-spacing: -5%;
   text-transform: uppercase;
 
+  @include md {
+    font-size: 56px;
+  }
+
+  @include lg {
+    font-size: 72px;
+  }
+
   &__num {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
     gap: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 
 .email-us {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-  margin-top: 40px;
 
   grid-column: span 2;
 
   @include md {
     grid-column: 5 / 9;
-    margin-top: 24px;
   }
 }
 
 .social-media {
   display: flex;
   cursor: pointer;
-  margin-top: 40px;
-  grid-column: 1 / -1;
 
   &__icon {
     width: 24px;
@@ -50,9 +56,6 @@
 }
 
 .footer {
-  margin-bottom: 56px;
-  margin-top: 40px;
-
   color: #7f8096;
   font-family: Inter, sans-serif;
   font-weight: 400;

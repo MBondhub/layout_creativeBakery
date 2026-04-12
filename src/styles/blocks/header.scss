@@ -1,5 +1,4 @@
 .header {
-  margin-bottom: 64px;
 
   &__content {
     display: flex;
@@ -15,7 +14,6 @@
     width: 100%;
 
     @include md {
-      height: 328px;
       justify-content: center;
       align-items: center;
     }
@@ -34,9 +32,17 @@
 
   @include md {
     margin-top: 80px;
-    margin-left: 44px;
+    max-width: 280px;
+    text-align: left;
+  }
+
+  @include lg {
+    margin-top: 135px;
+    text-align: left;
+    max-width: 260px;
   }
 }
+
 
 .header__title {
   display: flex;
@@ -53,19 +59,29 @@
   width: 100%;
   margin-top: 32px;
   z-index: 2;
+
+  @include md {
+    font-size: 80px;
+  }
+
+  @include lg {
+    font-size: 136px;
+  }
+
+  @include xl {
+    font-size: 144px;
+  }
 }
 
 .header-image {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
+
   &__cookie {
     display: block;
-    width: 100%;
     max-width: 288px;
-    height: 100%;
 
     @include md {
       position: absolute;
@@ -75,6 +91,15 @@
       z-index: 1;
       max-width: 326px;
     }
+
+    @include lg {
+      max-width: 100%;
+      height: 546px;
+    }
+
+    @include xl {
+      height: 586px;
+    }
   }
 }
 
@@ -82,6 +107,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include lg {
+    justify-content: start;
+  }
 }
 
 .header__button {
@@ -111,6 +140,16 @@
     max-width: 326px;
     margin-top: 80px;
     margin-bottom: 228px;
+  }
+
+  @include lg {
+    height: 56px;
+    max-width: 260px;
+    margin-top: 64px;
+  }
+
+  @include xl {
+    max-width: 280px;
   }
 
   &-cookie {
