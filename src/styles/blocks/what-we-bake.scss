@@ -103,16 +103,19 @@
 
 .product {
   position: relative;
-  cursor: pointer;
 
   &-card {
-    margin-top: 56px;
+    display: block;
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;
 
-    @include md {
-      margin-top: 80px;
-    }
+
+    &:hover {
+      transform: scale(1.1);
+  }
   }
 
   &-arrow {
@@ -127,6 +130,19 @@
   }
 }
 
+.product-card__wrapper {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    line-height: 0;
+    margin-top: 56px;
+    overflow: hidden;
+
+    @include md {
+      margin-top: 80px;
+    }
+}
+
 .arrow-container {
   margin-top: 24px;
   display: inline-flex;
@@ -134,5 +150,4 @@
   gap: 4px;
   cursor: pointer;
 }
-
 

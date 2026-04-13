@@ -10,6 +10,7 @@
   background-image: url(/src/images/icon-menu.png);
 
   @include lg {
+    display: none;
     opacity: 0;
     pointer-events: none;
   }
