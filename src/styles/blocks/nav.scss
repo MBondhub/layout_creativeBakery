@@ -77,5 +77,10 @@
 .nav-icon-container {
   display: inline-flex;
   gap: 4px;
-  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }

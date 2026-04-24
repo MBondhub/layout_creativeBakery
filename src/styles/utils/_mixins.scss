@@ -10,11 +10,13 @@
     @content;
   }
 }
+
 @mixin lg {
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
+
 @mixin xl {
   @media (min-width: 1440px) {
     @content;
@@ -27,10 +29,12 @@
   @include md {
     padding-inline: 44px;
   }
+
   @include lg {
     margin-inline: auto;
     padding-inline: 44px;
   }
+
   @include xl {
     margin-inline: auto;
     padding-inline: 124px;
@@ -40,3 +44,4 @@
 .container {
   @include content-padding-inline;
 }
+

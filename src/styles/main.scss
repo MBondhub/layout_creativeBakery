@@ -11,6 +11,11 @@
 @import '/src/styles/blocks/nav';
 @import '/src/styles/blocks/top-bar';
 
+:root {
+  --rows: 2;
+  --footer-x-gap: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;

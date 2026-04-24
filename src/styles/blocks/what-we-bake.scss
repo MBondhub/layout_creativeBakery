@@ -103,6 +103,7 @@
 
 .product {
   position: relative;
+  max-width: 432px;
 
   &-card {
     display: block;
@@ -144,10 +145,29 @@
 }
 
 .arrow-container {
+  position: relative;
   margin-top: 24px;
+  width: 84px;
+  height: 32px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
   cursor: pointer;
+}
+
+.arrow-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #f9512e;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+}
+
+.arrow-container:hover::after {
+  transform: scaleX(1);
 }
 
