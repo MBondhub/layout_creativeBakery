@@ -27,3 +27,7 @@ body {
   scroll-behavior: smooth;
   background-color: #ffeefc;
 }
+
+body:has(.menu:target) {
+  overflow: hidden;
+}

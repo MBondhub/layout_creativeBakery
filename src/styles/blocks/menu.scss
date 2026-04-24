@@ -9,7 +9,7 @@
   height: 100vh;
   opacity: 0;
   pointer-events: none;
-  overflow: auto;
+  overflow: hidden;
   z-index: 99;
 
   justify-content: center;
@@ -35,4 +35,8 @@
   flex-direction: column;
   text-align: center;
   margin-top: 132px;
+}
+
+.menu:has(.page-menu:target) {
+  overflow: hidden;
 }
